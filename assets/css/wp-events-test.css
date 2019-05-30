@@ -1,0 +1,64 @@
+.wp-events-test-calendar .wp-events-test-today {
+	background-color: #00fefe;
+	/* background-color: #80ff00; */
+}
+.wp-events-test-calendar .wp-events-test-spinner {
+	display:none;
+	background:url(images/spinner.gif) no-repeat;
+	float:left;
+	margin-right:4px;
+	height:20px;
+	width:20px;
+}
+.wp-events-test-calendar .with-events {
+	cursor: pointer;
+	background-color: #80ff00;
+}
+.wp-events-test-calendar .wp-events-test-today {
+	cursor: pointer;
+}
+
+.wp-events-test-nav.next {
+	float: right;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+[data-tooltip]:before {
+  border-bottom: .6em solid #09f;
+  border-bottom: .6em solid rgba(0,153,255,0.8);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  left: 20px;
+  margin-top: 1em;
+}
+
+[data-tooltip]:after {
+  background-color: #000;
+  border: 4px solid #0099ff;
+  border: 4px solid rgba(0,153,255,0.8);
+  border-radius: 7px;
+  color: #ffffff;
+  content: attr(data-tooltip-title) ":\A" attr(data-tooltip-content);
+  left: 0;
+  margin-top: 1.5em;
+  padding: 5px 15px;
+  white-space: pre-wrap;
+  width: 200px;
+  z-index: 1000;
+}
+
+[data-tooltip]:hover:after,
+[data-tooltip]:hover:before {
+  display: block;
+}
