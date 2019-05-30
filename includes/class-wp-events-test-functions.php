@@ -5,11 +5,11 @@
  * @package WP Events Test.
  */
 
-/**
- * Asset management.
- */
 if ( ! class_exists('WPEvents_Test_Functions') ) : 
 
+	/**
+	 * Class WPEvents_Test_Functions.
+	 */
 	class WPEvents_Test_Functions {	
 
 		/**
